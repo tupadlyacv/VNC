@@ -1,0 +1,12 @@
+<app-base-modal>
+  <ng-container modal-header>
+    <h2>Are you sure you want to delete the message?</h2>
+  </ng-container>
+
+  <ng-container modal-buttons>
+    <div class="buttons">
+      <button mat-button (click)="onReject()">Cancel</button>
+      <button mat-button (click)="onSubmit()">Ok</button>
+    </div>
+  </ng-container>
+</app-base-modal>

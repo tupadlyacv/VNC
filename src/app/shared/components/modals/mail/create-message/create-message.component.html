@@ -1,0 +1,19 @@
+<app-base-modal>
+  <ng-container modal-header>
+    <h2>Write message to {{data.from}}</h2>
+  </ng-container>
+
+  <ng-container modal-content>
+    <mat-form-field class="input-wrapper" appearance="fill">
+      <mat-label>Message</mat-label>
+      <input [(ngModel)]="newMessage" matInput placeholder="Write here">
+    </mat-form-field>
+  </ng-container>
+
+  <ng-container modal-buttons>
+    <div class="buttons">
+      <button mat-button (click)="onReject()">Cancel</button>
+      <button mat-button (click)="onSubmit()">Ok</button>
+    </div>
+  </ng-container>
+</app-base-modal>

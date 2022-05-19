@@ -1,0 +1,19 @@
+<div class="content">
+  <h1 class="title">INBOX</h1>
+
+  <button class="button" mat-raised-button (click)="createDialog()">
+    Create Dialog
+  </button>
+
+  <div class="chats">
+    <app-dialog-preview *ngFor="let chat of chats$ | async"
+                        (picked)="pickChat($event)"
+                        (deleted)="deleteDialog($event)"
+                        [chat]="chat">
+    </app-dialog-preview>
+  </div>
+
+  <div class="dialog-container" *ngIf="pickedChat">
+    <app-dialog [chat]="pickedChat"></app-dialog>
+  </div>
+</div>

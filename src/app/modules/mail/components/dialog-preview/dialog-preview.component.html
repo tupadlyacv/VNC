@@ -1,0 +1,11 @@
+<div class="dialog" (click)="navigateToChat()">
+  <div class="dialog-from">{{chat.from}}</div>
+  <div class="dialog-preview">
+    <button mat-raised-button
+            (click)="deleteChat($event)"
+            class="delete-button">
+      Delete
+    </button>
+    <div class="dialog-preview_message" >{{chat.messages.slice(-1)[0].text}}</div>
+  </div>
+</div>

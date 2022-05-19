@@ -1,0 +1,24 @@
+<app-base-modal>
+  <ng-container modal-header>
+    <h2>New contact</h2>
+  </ng-container>
+
+  <ng-container modal-content>
+    <div class="form">
+      <mat-form-field class="input-wrapper" appearance="fill">
+        <mat-label>Input new contact email</mat-label>
+        <input [(ngModel)]="mail"
+               matInput
+               name="email"
+               placeholder="Write here">
+      </mat-form-field>
+    </div>
+  </ng-container>
+
+  <ng-container modal-buttons>
+    <div class="buttons">
+      <button mat-button (click)="onReject()">Cancel</button>
+      <button mat-button (click)="onSubmit()">Ok</button>
+    </div>
+  </ng-container>
+</app-base-modal>

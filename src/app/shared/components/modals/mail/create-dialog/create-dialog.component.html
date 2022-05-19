@@ -1,0 +1,26 @@
+<app-base-modal>
+  <ng-container modal-header>
+    <h2>New chat</h2>
+  </ng-container>
+
+  <ng-container modal-content>
+    <div class="form">
+      <mat-form-field class="input-wrapper" appearance="fill">
+        <mat-label>Input person name</mat-label>
+        <input [(ngModel)]="chatWith" matInput placeholder="Write here">
+      </mat-form-field>
+
+      <mat-form-field class="input-wrapper" appearance="fill">
+        <mat-label>Write your first message</mat-label>
+        <input [(ngModel)]="firstMessage" matInput placeholder="Write here">
+      </mat-form-field>
+    </div>
+  </ng-container>
+
+  <ng-container modal-buttons>
+    <div class="buttons">
+      <button mat-button (click)="onReject()">Cancel</button>
+      <button mat-button (click)="onSubmit()">Ok</button>
+    </div>
+  </ng-container>
+</app-base-modal>

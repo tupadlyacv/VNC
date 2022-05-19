@@ -1,0 +1,26 @@
+:host ::ng-deep {
+  app-dialog-preview:first-child {
+    .dialog {
+      border-top: 1px solid black;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .chats {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 150px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,17 @@
+.dialog {
+
+  &-header {
+    margin: 30px 0 5px 0;
+  }
+
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  &-messages {
+    border-top: 1px solid black;
+  }
+}

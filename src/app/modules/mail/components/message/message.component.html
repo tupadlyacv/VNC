@@ -1,0 +1,8 @@
+<div class="message">
+  <div class="message-buttons">
+    <button mat-raised-button class="button" (click)="viewMessage()">View</button>
+    <button mat-raised-button class="button" (click)="deleteMessage()">Delete</button>
+  </div>
+  <div class="message-text">{{message.text}}</div>
+  <div class="message-date">{{message.timestamp | date: 'HH:mm dd.MM.yyyy'}}</div>
+</div>

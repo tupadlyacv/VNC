@@ -1,0 +1,17 @@
+<app-base-modal>
+  <ng-container modal-header>
+    <h2>Message info:</h2>
+  </ng-container>
+
+  <ng-container modal-content>
+    <p>Message id: {{data.id}}</p>
+    <p>Message date: {{data.timestamp | date}}</p>
+    <p>Message text: {{data.text}}</p>
+  </ng-container>
+
+  <ng-container modal-buttons>
+    <div class="buttons">
+      <button mat-button (click)="onClose()">Close</button>
+    </div>
+  </ng-container>
+</app-base-modal>

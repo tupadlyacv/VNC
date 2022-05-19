@@ -1,0 +1,13 @@
+<div class="dialog">
+  <div class="dialog-header">Dialog with {{chat?.from}}</div>
+  <div class="dialog-buttons">
+    <button mat-raised-button class="button" (click)="createMessage()">Create message</button>
+  </div>
+  <div class="dialog-messages">
+    <app-message *ngFor="let message of chat?.messages"
+                 (deleteMsg)="deleteMessage($event)"
+                 [message]="message"
+    ></app-message>
+  </div>
+
+</div>
